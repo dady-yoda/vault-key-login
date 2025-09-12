@@ -15,6 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        auth: "bg-gradient-primary text-primary-foreground hover:shadow-glow hover:scale-105 transition-all duration-300 ease-out border border-primary/20 backdrop-blur-sm",
+        fingerprint: "bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground hover:shadow-glow transition-all duration-300 border border-border",
+        metamask: "bg-gradient-to-r from-orange-500 to-yellow-500 text-white hover:from-orange-600 hover:to-yellow-600 hover:shadow-glow transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
