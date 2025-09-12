@@ -79,6 +79,16 @@ const LoginPage = () => {
             Connect MetaMask
           </Button>
 
+          {/* Register Link */}
+          <div className="text-center">
+            <p className="text-sm text-muted-foreground">
+              New to Web3?{" "}
+              <a href="#" className="text-primary hover:underline font-medium">
+                Register here
+              </a>
+            </p>
+          </div>
+
           {/* Security Note */}
           <div className="text-center">
             <p className="text-xs text-muted-foreground">
