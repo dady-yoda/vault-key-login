@@ -11,10 +11,22 @@ const LoginPage = () => {
     console.log("Attempting MetaMask connection...");
   };
   return <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Background gradient effects */}
-      <div className="absolute inset-0 bg-gradient-glow opacity-30" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+      {/* Animated background effects */}
+      <div className="absolute inset-0 bg-gradient-glow opacity-30 animate-pulse-glow" />
+      
+      {/* Floating orbs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-primary-glow/5 rounded-full blur-2xl animate-gradient-shift" style={{ animationDelay: '3s' }} />
+      
+      {/* Rotating geometric shapes */}
+      <div className="absolute top-1/3 right-1/3 w-32 h-32 border border-primary/20 rounded-lg animate-rotate-slow" />
+      <div className="absolute bottom-1/3 left-1/3 w-24 h-24 border border-accent/20 rounded-full animate-rotate-slow" style={{ animationDirection: 'reverse', animationDuration: '15s' }} />
+      
+      {/* Additional floating particles */}
+      <div className="absolute top-1/2 left-1/6 w-4 h-4 bg-primary-glow/30 rounded-full animate-float" style={{ animationDelay: '2s', animationDuration: '4s' }} />
+      <div className="absolute top-1/6 right-1/6 w-6 h-6 bg-accent/20 rounded-full animate-float" style={{ animationDelay: '0.5s', animationDuration: '3.5s' }} />
+      <div className="absolute bottom-1/6 left-3/4 w-3 h-3 bg-primary/40 rounded-full animate-float" style={{ animationDelay: '1s', animationDuration: '5s' }} />
       
       <Card className="w-full max-w-md relative z-10 bg-card/80 backdrop-blur-xl border-border/50 shadow-card">
         <CardHeader className="text-center space-y-4">
